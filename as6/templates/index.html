@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Main page
+{% endblock %}
+
+{% block body %}
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 fw-normal">Welcome to Serikov Education Center!</h1>
+      <p class="lead fw-normal">We are glad to see you here! We are offering lot of courses, so you can study now anything you want. Let's start?</p>
+      <a href="{{ url_for('courses') }}" class="btn btn-primary py-2 d-none d-md-inline-block">Courses</a>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+{% endblock %}
